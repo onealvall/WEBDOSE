@@ -16,7 +16,10 @@ class Advising extends MY_Controller  {
     
     public function index()
     {
+        //get time
         $this->data['time'] = $this->Schedule_Model->get_time();
+        //get day
+
         $this->render($this->set_views->advising());
 
     }
