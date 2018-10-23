@@ -43,6 +43,8 @@
 
          <script src="<?php echo base_url(); ?>js/ajax/feedback.js"></script>
 
+          <script src="<?php echo base_url(); ?>js/pages/ui/modals.js"></script>
+
 
 
 <script>

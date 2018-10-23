@@ -69,15 +69,51 @@ class set_views
 		 return 'body/registrar/Enrolled_students';
 	}
 
-	/*Registrar */
+	
 
 
 	/*Advising */
 
-	public function  wr_enrolled_student()
+	public function  advising()
 	{
 		 return 'body/Advising/Advising';
 	}
 
-		/*Advising */
+	/*Advising */
+
+
+	/*Room Viewing*/
+
+	public function  room_view()
+	{
+		 return 'body/registrar/Room';
+	}
+
+	/*Room Viewing*/
+
+
+	/*Create Sched*/
+
+	public function  create_sched()
+	{
+		 return 'body/registrar/Create_Sched';
+	}
+
+	/*Create Sched*/
+
+
+	/*Registrar Action Logs*/
+
+	public function  action_logs()
+	{
+		 return 'body/registrar/Activity_logs';
+	}
+
+	/*Registrar Action Logs*/
+
+
+
+
+/*Registrar */
+
 }

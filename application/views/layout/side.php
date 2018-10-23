@@ -69,6 +69,12 @@
                                           </li>
                                      </ul>
                              </li>
+
+                               <li>
+                                   <a href="index.html">
+                                   <span>Room View</span>
+                                   </a>
+                               </li>
                         </ul>
                     </li>
                      

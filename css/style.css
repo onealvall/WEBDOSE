@@ -8121,3 +8121,21 @@ color: #cc0000;
 .text-red{
   color: #303030;
 }
+
+.SchedBorder{
+  background-color: lightgrey;
+  border: 2px ;
+  width: 100px;
+  font-size: 12px;
+}
+
+.SBorder{
+  
+    padding: 10px;
+    border: 2px solid lightgrey;
+    margin: 0;
+}
+
+.Beld{
+  font-weight: 100;
+}
