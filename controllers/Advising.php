@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Advising extends MY_Controller  {
 
-
 	
 	function __construct() {
         parent::__construct();
@@ -17,9 +16,17 @@ class Advising extends MY_Controller  {
       $this->render($this->set_views->advising());
 	}
 
+  
+
+
+
+
+
+
+ 
+
+
 
 
 }
 ?>
-
-
