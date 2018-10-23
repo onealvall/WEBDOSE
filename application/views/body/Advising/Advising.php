@@ -68,43 +68,35 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td>7:00 AM - 8:00 AM</td>
-								<td>
-							     	<div class="btn bg-red btn-block btn-xs">
-								    	<h5>20130515</h5>
-									    <h5>Oneal A. Vallecera</h5>
-							      	</div>
-								</td>
-								<td>
-							     	<div class="btn bg-red btn-block btn-xs">
-									      <h5>20130515</h5>
-									      <h5>Oneal A. Vallecera</h5>
-							    	</div>
-								</td>
-								<td>
-							     	<div class="btn bg-green btn-block btn-xs">
-									    <h5>20130515</h5>
-									    <h5>Oneal A. Vallecera</h5>
-							    	</div>
-								</td>
-								<td class="">
-									<p>Course Code</p>
-									<p>Instructor</p>
-								</td>
-								<td class="SchedBorder">
-									<p>Course Code</p>
-									<p>Instructor</p>
-								</td>
-								<td class="SchedBorder">
-									<p>Course Code</p>
-									<p>Instructor</p>
-								</td>
-								<td class="SchedBorder">
-									<p>Course Code</p>
-									<p>Instructor</p>
-								</td>
-							</tr>
+							
+							<?php
+								foreach ($this->data['time'] as $time) 
+								{
+									# code...
+									
+									
+									
+								
+							?>
+								<tr>
+									<td><?php echo $time['Schedule_Time']; ?></td>
+									<?php 
+									$array_day = array('M', 'T', 'W', 'TH', 'F', 'SA', 'SU');
+									foreach ($array_day as $value) 
+									{
+										# code...
+									
+									?>
+										<td id="<?php echo $time['Time_From']; ?>_<?php echo $value; ?>"></td>
+									<?php 
+									}
+									?>
+
+								</tr>	
+							<?php
+									
+								}
+							?>
 					
 						</tbody>
 					</table>

@@ -10,10 +10,14 @@ class Advising extends MY_Controller  {
         $this->load->library('email');
         $this->load->library('pagination');
         $this->load->library('session');
+
+        $this->load->model('Advising_Model/Schedule_Model');
     }
     
     public function index()
     {
-        $this->render($this->set_views->wr_enrolled_student());
+        $this->data['time'] = $this->Schedule_Model->get_time();
+        $this->render($this->set_views->advising());
+
     }
 }
