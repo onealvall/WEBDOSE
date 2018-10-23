@@ -195,6 +195,7 @@ public function GetStudentList($sy,$sm,$nt,$pmajor,$major,$gen,$Yl,$Sec,$submit)
     else{
       $this->db->where('Student_Info.Student_Number != ', '0');
       $this->db->where('Student_Info.Student_Number' , '');
+      
     }
   
     $this->db->order_by('Student_Info.Last_Name', 'ASC');

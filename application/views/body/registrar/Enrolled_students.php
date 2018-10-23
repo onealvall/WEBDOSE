@@ -35,7 +35,6 @@
                         <div class="col-md-6">
                            <div class="form-group">
                                        <select   class="form-control show-tick" data-live-search="true"  id="ES" class="danger" name="School_year" required>
-                                          <option disabled  selected>Select School Year</option>
                                            <?php foreach($this->data['Get_YEAR']->result_array() as $row)  {?>
                                            <option><?php echo $row['schoolyear']; ?></option>
                                            <?php }?>
@@ -43,7 +42,6 @@
                                      <br>
                             
                                     <select class="form-control show-tick" data-live-search="true"   id="ES" name="Sem" class="danger" required>
-                                            <option  disabled selected>Select Semester</option>
                                             <?php foreach($this->data['Get_SEM']->result_array() as $row)  {?> 
                                             <option><?php echo $row['Semester']; ?></option>  
                                             <?php }?>
@@ -77,9 +75,9 @@
                                         <br>
                                         <select  class="form-control show-tick" data-live-search="true"  name="municipality">
                                             <option  disabled selected>Select Municipality</option>
-                                            <?php foreach($this->data['GetMunicipality']->result_array() as $row)  {?>
-                                             <option><?php echo $row['citymunDesc']; ?></option>
-                                            <?php }?>
+                                         
+                                             <option></option>
+                                         
                                          </select> 
                                          <br>
                                    

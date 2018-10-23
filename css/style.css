@@ -8122,7 +8122,6 @@ color: #cc0000;
   color: #303030;
 
 }
-
 .SchedBorder{
   background-color: lightgrey;
   border: 2px ;
@@ -8135,5 +8134,10 @@ color: #cc0000;
     padding: 10px;
     border: 2px solid lightgrey;
     margin: 0;
+
+}
+
+.Beld{
+  font-weight: 100;
 
 }
