@@ -112,9 +112,26 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title" id="largeModalLabel"></h4>
+                            <h4 class="modal-title" id="largeModalLabel">Add Schedule</h4>
                         </div>
                         <div class="modal-body">
+							<br> <br>
+							<div class="row">
+								<div class="col-md-6">
+						         	<select class="form-control show-tick" data-live-search="true" name="">
+					                	<option disabled selected>
+						               	Select Schedule Code
+					            	   </option>
+					                 </select><br>
+								 </div>
+								 <div class="col-md-6">
+						         	<select class="form-control show-tick" data-live-search="true" name="">
+					                	<option disabled selected>
+						               	Course Code
+					            	   </option>
+					                 </select><br>
+						     	</div>
+							</div>
 					     	<div class="table panel panel-danger" style="overflow-x:auto;">
 				         	    <table class="table table-bordered">
 					            	<thead>

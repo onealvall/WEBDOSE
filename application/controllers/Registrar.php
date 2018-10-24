@@ -8,6 +8,7 @@ class Registrar extends MY_Controller  {
         parent::__construct();
         $this->load->library('set_views');
         $this->load->model('Registrar_Models/Room_Model');
+        $this->load->model('Registrar_Models/Actionlogs_Model');
         
     }	
     
@@ -26,6 +27,8 @@ class Registrar extends MY_Controller  {
     
     public function Activity_Logs()
 	{
+      $this->data['user'] = $this->Actionlogs_Model->Get_user();
+      $this->data['get_table'] = $this->Actionlogs_Model->Get_table();
       $this->render($this->set_views->action_logs());
 	}
 

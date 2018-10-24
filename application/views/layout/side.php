@@ -71,16 +71,28 @@
                              </li>
 
                                <li>
-                                   <a href="index.html">
+                                   <a href="<?php echo base_url(); ?>index.php/Registrar/RoomView">
                                    <span>Room View</span>
+                                   </a>
+                               </li>
+
+                                 <li>
+                                   <a href="<?php echo base_url(); ?>index.php/Registrar/Activity_Logs">
+                                   <span>Action Logs</span>
+                                   </a>
+                               </li>
+
+                                 <li>
+                                   <a href="index.html">
+                                   <span>Schedule Cloning</span>
                                    </a>
                                </li>
                         </ul>
                     </li>
                      
 
-                       <li class="active">
-                        <a href="index.html">
+                       <li class="">
+                        <a href="<?php echo base_url(); ?>index.php/Advising">
                             <i class="material-icons">dashboard</i>
                             <span>Advising</span>
                         </a>
