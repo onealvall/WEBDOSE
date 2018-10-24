@@ -6,7 +6,7 @@ class Schedule_Model extends CI_Model{
     public function get_time()
     {
         $this->db->select('*');
-        $this->db->from('time');
+        $this->db->from('Time');
 
         $query = $this->db->get();
 
