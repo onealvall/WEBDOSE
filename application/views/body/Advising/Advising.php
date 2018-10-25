@@ -50,6 +50,7 @@
 				</div><br>
 				<div class="text-center">
 					<button class="btn btn-danger" data-toggle="modal" data-target="#largeModal">Add Schedule</button>
+					<button class="btn btn-danger" onclick="displaySched(201720071, '<?php echo site_url().'/Advising/get_sched_list'; ?>', '<?php echo site_url().'/Advising/get_time'; ?>')" data-target="#largeModal">checker</button>
 				</div>
 			</div>
 			<div class="col-md-9">
@@ -176,3 +177,6 @@
                     </div>
                 </div>
             </div>
+
+
+<script type="text/javascript" src="<?php echo base_url(); ?>js/advising.js"></script>

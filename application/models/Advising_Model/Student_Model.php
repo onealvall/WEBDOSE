@@ -47,5 +47,14 @@ class Student_Model extends CI_Model{
         return $query->result_array();
     }
 
+    function check_student_enrolled($reference_no)
+    {
+        $this->db->select('*');
+        $this->db->from('Fees_Enrolled_College AS FEC'); 
+        $this->db->join('Legend AS L', 'FEC.schoolyear = L.School_Year AND FEC.semester = L.Semester', 'left');
+    } 
+
+    
+
 
 }

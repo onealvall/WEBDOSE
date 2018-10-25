@@ -17,6 +17,8 @@ class Advising extends MY_Controller  {
     
     public function index()
     {
+        //get legend 
+        $this->data['legend'] = $this->Schedule_Model->get_legend();
         //get time
         $this->data['time'] = $this->Schedule_Model->get_time();
         //get day
@@ -27,7 +29,7 @@ class Advising extends MY_Controller  {
 
     public function get_student_info()
     {
-        if (($this->input->get('value') === NULL) OR (! is_numeric($this->input->get('value')) === NULL)) 
+        if (($this->input->get('value') === NULL) OR (! is_numeric($this->input->get('value')))) 
         {
             # code...
             //redirect('Advising');
@@ -48,6 +50,8 @@ class Advising extends MY_Controller  {
             //redirect('Advising');
             echo "error: reference number or student number is invalid ";
         }
+
+        //$array_output = array('' => , );
 
         //get student current year
         $student_year = $this->Student_Model->get_student_info_by_reference_no($student_info[0]['Reference_Number']);
@@ -72,5 +76,34 @@ class Advising extends MY_Controller  {
 
 
 
+    }
+
+    public function get_time()
+    {
+        if (($this->input->get('check') ==! 1) OR (! is_numeric($this->input->get('check')))) 
+        {
+            # code...
+            //redirect('Advising');
+            echo "error";
+        }
+
+        $array_time = $this->Schedule_Model->get_time();
+        echo json_encode($array_time);
+        //echo 'yes';
+
+    }
+
+    public function get_sched_list()
+    {
+        if (($this->input->get('schedId') === NULL) OR (! is_numeric($this->input->get('schedId')))) 
+        {
+            # code...
+            //redirect('Advising');
+            echo "error";
+        }
+
+        $array_schedule_list = $this->Schedule_Model->get_sched_list($this->input->get('schedId'));
+        echo json_encode($array_schedule_list);
+        //echo "error";
     }
 }
