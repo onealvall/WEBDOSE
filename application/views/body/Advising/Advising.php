@@ -82,7 +82,7 @@
 								<tr>
 									<td><?php echo $time['Schedule_Time']; ?></td>
 									<?php 
-									$array_day = array('M', 'T', 'W', 'TH', 'F', 'SA', 'SU');
+									$array_day = array('M', 'T', 'W', 'H', 'F', 'SA', 'SU');
 									foreach ($array_day as $value) 
 									{
 										# code...
